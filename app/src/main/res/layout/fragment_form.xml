@@ -1,0 +1,363 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".fragment.fg_form.view.FormFragment">
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/_32sdp"
+        android:layout_marginRight="@dimen/_32sdp"
+        android:layout_marginBottom="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:translationZ="@dimen/_2sdp"
+        app:cardCornerRadius="@dimen/_4sdp"
+        app:cardElevation="@dimen/_2sdp">
+        <ScrollView
+            android:layout_width="match_parent"
+            android:scrollbars="none"
+            android:layout_height="match_parent">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginBottom="@dimen/_8sdp"
+                    android:text="Fill up your information"
+                    android:textColor="@color/colorHint"
+                    android:textSize="@dimen/_12sdp" />
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:layout_marginBottom="@dimen/_8sdp">
+
+                    <EditText
+                        android:id="@+id/name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="name*"
+                        android:maxLength="256"
+                        android:singleLine="true"
+                        android:lines="1"
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapWords"
+                        android:textColor="@color/colorText"
+                        android:textColorHint="@color/colorHint"
+                        android:textSize="@dimen/_14sdp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:layout_marginBottom="@dimen/_16sdp">
+
+                    <EditText
+                        android:id="@+id/email"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="email*"
+                        android:maxLength="256"
+                        android:singleLine="true"
+                        android:lines="1"
+                        android:imeOptions="actionNext"
+                        android:inputType="textEmailAddress"
+                        android:textColor="@color/colorText"
+                        android:textColorHint="@color/colorHint"
+                        android:textSize="@dimen/_14sdp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:layout_marginBottom="@dimen/_16sdp">
+
+                    <EditText
+                        android:id="@+id/phone"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="phone*"
+                        android:maxLength="14"
+                        android:singleLine="true"
+                        android:lines="1"
+                        android:imeOptions="actionNext"
+                        android:inputType="phone"
+                        android:digits="+0123456789"
+                        android:textColor="@color/colorText"
+                        android:textColorHint="@color/colorHint"
+                        android:textSize="@dimen/_14sdp" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:layout_marginBottom="@dimen/_16sdp">
+
+                    <EditText
+                        android:id="@+id/full_address"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="address"
+                        android:maxLength="512"
+                        android:singleLine="true"
+                        android:lines="1"
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapSentences"
+                        android:textColor="@color/colorText"
+                        android:textColorHint="@color/colorHint"
+                        android:textSize="@dimen/_14sdp" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:layout_marginBottom="@dimen/_16sdp">
+
+                    <EditText
+                        android:id="@+id/name_of_university"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="university*"
+                        android:maxLength="256"
+                        android:singleLine="true"
+                        android:lines="1"
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapWords"
+                        android:textColor="@color/colorText"
+                        android:textColorHint="@color/colorHint"
+                        android:textSize="@dimen/_14sdp" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:layout_marginBottom="@dimen/_16sdp">
+
+                    <EditText
+                        android:id="@+id/graduation_year"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="graduation year*"
+                        android:inputType="number"
+                        android:maxLength="4"
+                        android:digits="0123456789"
+                        android:singleLine="true"
+                        android:lines="1"
+                        android:imeOptions="actionNext"
+                        android:textColor="@color/colorText"
+                        android:textColorHint="@color/colorHint"
+                        android:textSize="@dimen/_14sdp" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:layout_marginBottom="@dimen/_16sdp">
+
+                    <EditText
+                        android:id="@+id/cgpa"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="cgpa"
+                        android:inputType="numberDecimal"
+                        android:maxLength="4"
+                        android:singleLine="true"
+                        android:lines="1"
+                        android:digits="0123456789."
+                        android:imeOptions="actionNext"
+                        android:textColor="@color/colorText"
+                        android:textColorHint="@color/colorHint"
+                        android:textSize="@dimen/_14sdp" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:layout_marginBottom="@dimen/_16sdp">
+
+                    <EditText
+                        android:id="@+id/experience_in_months"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="months of experience"
+                        android:inputType="number"
+                        android:maxLength="3"
+                        android:singleLine="true"
+                        android:lines="1"
+                        android:digits="0123456789"
+                        android:imeOptions="actionNext"
+                        android:textColor="@color/colorText"
+                        android:textColorHint="@color/colorHint"
+                        android:textSize="@dimen/_14sdp" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:layout_marginBottom="@dimen/_16sdp">
+
+                    <EditText
+                        android:id="@+id/current_work_place_name"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="current working place"
+                        android:maxLength="256"
+                        android:singleLine="true"
+                        android:lines="1"
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapSentences"
+                        android:textColor="@color/colorText"
+                        android:textColorHint="@color/colorHint"
+                        android:textSize="@dimen/_14sdp" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <TextView
+                    android:id="@+id/applying_in"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="applying in*"
+                    android:textColor="@color/colorText"
+                    android:textColorHint="@color/colorHint"
+                    android:textSize="@dimen/_14sdp"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_16sdp"/>
+         <RadioGroup
+             android:id="@+id/radioGroup"
+             android:layout_width="match_parent"
+             android:orientation="horizontal"
+             android:layout_height="wrap_content"
+             android:layout_marginLeft="@dimen/_16sdp"
+             android:layout_marginTop="@dimen/_4sdp"
+             android:layout_marginRight="@dimen/_16sdp"
+             android:layout_marginBottom="@dimen/_16sdp">
+             <RadioButton
+                 android:id="@+id/mobile"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:checked="true"
+                 android:text="Mobile"/>
+             <RadioButton
+                 android:layout_marginLeft="@dimen/_8sdp"
+                 android:id="@+id/backend"
+                 android:layout_width="wrap_content"
+                 android:layout_height="wrap_content"
+                 android:text="Backend"/>
+         </RadioGroup>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:layout_marginBottom="@dimen/_16sdp">
+
+                    <EditText
+                        android:id="@+id/expected_salary"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="expected salary*"
+                        android:maxLength="5"
+                        android:singleLine="true"
+                        android:digits="0123456789"
+                        android:lines="1"
+                        android:imeOptions="actionNext"
+                        android:inputType="number"
+                        android:textColor="@color/colorText"
+                        android:textColorHint="@color/colorHint"
+                        android:textSize="@dimen/_14sdp" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:layout_marginBottom="@dimen/_16sdp">
+
+                    <EditText
+                        android:id="@+id/field_buzz_reference"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="reference"
+                        android:maxLength="256"
+                        android:singleLine="true"
+                        android:lines="1"
+                        android:imeOptions="actionNext"
+                        android:inputType="textCapWords"
+                        android:textColor="@color/colorText"
+                        android:textColorHint="@color/colorHint"
+                        android:textSize="@dimen/_14sdp" />
+                </com.google.android.material.textfield.TextInputLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="@dimen/_16sdp"
+                    android:layout_marginTop="@dimen/_8sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:layout_marginBottom="@dimen/_16sdp">
+
+                    <EditText
+                        android:id="@+id/github_project_url"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:hint="project url*"
+                        android:maxLength="512"
+                        android:singleLine="true"
+                        android:lines="1"
+                        android:imeOptions="actionDone"
+                        android:textColor="@color/colorText"
+                        android:textColorHint="@color/colorHint"
+                        android:textSize="@dimen/_14sdp" />
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <TextView
+                    android:id="@+id/submit"
+                    android:layout_width="@dimen/_56sdp"
+                    android:layout_height="@dimen/_56sdp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_margin="@dimen/_16sdp"
+                    android:elevation="2dp"
+                    android:textColor="@color/colorWhite"
+                    android:translationZ="2dp"
+                    android:textSize="@dimen/_12sdp"
+                    android:gravity="center"
+                    android:background="@drawable/shape_circle_green"
+                    android:padding="@dimen/_8sdp"
+                    android:textStyle="bold"
+                    android:text="Submit" />
+            </LinearLayout>
+        </ScrollView>
+
+    </androidx.cardview.widget.CardView>
+
+</FrameLayout>
