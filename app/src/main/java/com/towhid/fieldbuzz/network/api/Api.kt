@@ -16,7 +16,7 @@ interface Api {
             @Body signInReq: SignInReq
     ): Flowable<SignInRes>
 
-    @POST("v0/recruiting-entities/")
+    @POST("v1/recruiting-entities/")
     fun FormInfoRes_(
             @Body formInfoReq: FormInfoReq,
             @Header("Authorization") token: String
